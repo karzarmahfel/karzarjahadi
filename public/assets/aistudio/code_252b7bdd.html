@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="fa"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary":"#ffffff","surface-container-high":"#dce9ff","on-primary-fixed":"#131b2e","primary-container":"#131b2e","on-tertiary-container":"#9863ff","surface-container-lowest":"#ffffff","error":"#ba1a1a","inverse-primary":"#bec6e0","on-surface":"#0b1c30","primary":"#000000","on-tertiary-fixed-variant":"#5a00c6","primary-fixed-dim":"#bec6e0","on-primary-container":"#7c839b","surface-tint":"#565e74","secondary":"#904d00","surface-bright":"#f8f9ff","surface-dim":"#cbdbf5","secondary-fixed-dim":"#ffb77d","on-background":"#0b1c30","inverse-surface":"#213145","outline":"#76777d","tertiary":"#000000","on-secondary-container":"#663500","surface":"#f8f9ff","on-primary":"#ffffff","on-surface-variant":"#45464d","surface-container-low":"#eff4ff","on-secondary-fixed":"#2f1500","background":"#f8f9ff","surface-variant":"#d3e4fe","tertiary-container":"#25005a","secondary-container":"#fe932c","on-error":"#ffffff","tertiary-fixed":"#eaddff","on-tertiary-fixed":"#25005a","tertiary-fixed-dim":"#d2bbff","on-secondary":"#ffffff","on-primary-fixed-variant":"#3f465c","surface-container":"#e5eeff","outline-variant":"#c6c6cd","secondary-fixed":"#ffdcc3","on-error-container":"#93000a","primary-fixed":"#dae2fd","on-secondary-fixed-variant":"#6e3900","error-container":"#ffdad6","surface-container-highest":"#d3e4fe","inverse-on-surface":"#eaf1ff"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"gutter-mobile":"0.75rem","margin-mobile":"1rem","space-xs":"0.25rem","margin":"2rem","space-sm":"0.5rem","space-xl":"2.5rem","space-md":"1rem","space-lg":"1.5rem","gutter":"1.25rem"},fontFamily:{"label-sm":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"price-label":["Plus Jakarta Sans"],"price-headline":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"]},fontSize:{"label-sm":["11px",{"lineHeight":"16px","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"20px","fontWeight":"400"}],"display-hero-mobile":["28px",{"lineHeight":"40px","fontWeight":"800"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"32px","fontWeight":"700"}],"headline-lg":["30px",{"lineHeight":"42px","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"18px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"24px","fontWeight":"400"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"28px","fontWeight":"400"}],"price-label":["13px",{"lineHeight":"18px","fontWeight":"700"}],"price-headline":["20px",{"lineHeight":"28px","fontWeight":"800"}],"headline-lg-mobile":["22px",{"lineHeight":"32px","fontWeight":"700"}],"display-hero":["40px",{"lineHeight":"56px","fontWeight":"800"}],"headline-sm":["18px",{"lineHeight":"28px","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed right-0 top-0 h-full w-64 bg-primary-container text-on-primary z-50 flex flex-col pt-space-lg pb-space-xl shadow-[0_1px_8px_rgba(0,0,0,0.1)]"><div class="px-space-lg mb-space-lg flex items-center gap-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCC9bkJ1fRqlFJG3vruHEWD9mdEUqhFXlem95d8nkSqmNKsu-Ov02RCwczHJaMaq6xmJtP4hUwdlFtymHL5rtorVzuXwYqOnHjcdK5Jb3DTVHVgpr-eeY-r_f3Pw_D9xJnDomlPQRzGroIJVUac2q1XwbMmHvIiuA1JFe-pzkW4avp0AS8Yy_Em0AQnv_M9ymUWxNLpzOMN6zepT_E24DFqukTGtJ0YGyQ4-Nz_mzk"/><div class="flex flex-col"><span class="text-title-md font-title-md font-bold text-on-primary">مدیریت کارزار</span><span class="text-label-sm font-label-sm text-on-primary-container">بلوار توس مشهد</span></div></div><nav class="flex-1 px-space-md space-y-space-xs" data-active-classes="bg-surface-container-high text-on-surface font-bold rounded-lg"><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-primary-container hover:bg-inverse-surface hover:text-on-primary transition-colors text-body-sm font-body-sm" data-path="admin-portal" href="#"><span class="material-symbols-outlined ml-space-sm text-[20px]">dashboard</span>داشبورد و آمار کارزار</a><a aria-current="page" class="flex items-center px-space-md py-space-sm transition-colors bg-surface-container-high text-on-surface font-bold rounded-lg" data-path="manage-products" href="#"><span class="material-symbols-outlined ml-space-sm text-[20px]">inventory_2</span>مدیریت محصولات و فرآورده‌ها</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-primary-container hover:bg-inverse-surface hover:text-on-primary transition-colors text-body-sm font-body-sm" data-path="manage-orders" href="#"><span class="material-symbols-outlined ml-space-sm text-[20px]">local_shipping</span>سفارش‌ها و توزیع محلی</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-primary-container hover:bg-inverse-surface hover:text-on-primary transition-colors text-body-sm font-body-sm" data-path="manage-producers" href="#"><span class="material-symbols-outlined ml-space-sm text-[20px]">group</span>تولیدکنندگان مشاغل خانگی</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-primary-container hover:bg-inverse-surface hover:text-on-primary transition-colors text-body-sm font-body-sm mt-space-lg" data-path="all-products" href="#"><span class="material-symbols-outlined ml-space-sm text-[20px]">storefront</span>مشاهده فروشگاه عمومی</a></nav><div class="px-space-md"><div class="bg-inverse-surface p-space-sm rounded-lg text-label-sm font-label-sm text-inverse-on-surface flex items-center justify-between"><span>پشتیبانی: ۰۹۳۶۷۴۹۵۸۷۵</span><span class="material-symbols-outlined text-[16px]">support_agent</span></div></div></aside><div class="pr-64"><header class="fixed top-0 right-64 left-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-md"><span class="text-title-md font-title-md text-on-surface font-bold">سامانه پایش و مدیریت کارزار جهاد اقتصادی محفل</span><span class="bg-surface-container-low text-secondary px-space-sm py-space-xs rounded-full text-label-sm font-label-sm">مشهد مقدس - منطقه توس</span></div><div class="flex items-center gap-space-md"><a class="bg-tertiary-container hover:bg-tertiary text-on-tertiary px-space-sm py-space-xs rounded-lg flex items-center gap-space-xs text-label-sm font-label-sm transition-colors" href="https://rubika.ir/karzarmahfel184" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">campaign</span><span>روبیکا کارزار</span></a><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="material-symbols-outlined text-[20px]">account_circle</span></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full px-space-xl pb-space-xl space-y-space-lg">
+<!-- Header Stat & Action Band -->
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md pt-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>سامانه مدیریت انبار و محصولات کارزار جهاد اقتصادی</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-extrabold tracking-tight mt-space-xs">
+        کاتالوگ و زنجیره تأمین فرآورده‌ها
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-space-xs">
+        مدیریت متمرکز موجودی، نرخ‌گذاری دسته‌جمعی، نظارت بر خدمات خانگی بلوار توس و ارزش‌آفرینی تولیدکنندگان محلی.
+      </p>
+</div>
+<!-- Quick Actions -->
+<div class="flex items-center flex-wrap gap-space-sm">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container hover:bg-surface-container-high text-on-surface rounded-xl transition-all shadow-sm font-label-lg text-label-lg" id="btn-export-excel" onclick="triggerToast('فایل اکسل کاتالوگ با موفقیت بارگیری شد')">
+<span class="material-symbols-outlined text-[20px] text-secondary">table_view</span>
+<span>خروجی اکسل</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container hover:bg-surface-container-high text-on-surface rounded-xl transition-all shadow-sm font-label-lg text-label-lg" id="btn-batch-price" onclick="toggleBatchPriceModal()">
+<span class="material-symbols-outlined text-[20px] text-secondary">percent</span>
+<span>تغییر قیمت گروهی</span>
+</button>
+<!-- Primary Action CTA -->
+<button class="flex items-center gap-space-sm px-space-lg py-space-sm bg-secondary-container hover:bg-secondary text-on-secondary rounded-xl transition-all shadow-md hover:shadow-lg font-label-lg text-label-lg group" id="btn-open-create-modal" onclick="openCreateModal()">
+<span class="material-symbols-outlined text-[22px] group-hover:rotate-90 transition-transform">add_circle</span>
+<span class="font-bold">افزودن محصول جدید</span>
+</button>
+</div>
+</div>
+<!-- Key Metrics & Operational Health -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-on-surface-variant font-label-md text-label-md">کل محصولات و خدمات</span>
+<span class="font-price-headline text-price-headline text-on-surface mt-space-xs">۲۴۸ قلم</span>
+<span class="text-label-sm font-label-sm text-secondary mt-space-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> ۱۲ قلم افزوده شده این ماه
+        </span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[28px]">inventory_2</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-on-surface-variant font-label-md text-label-md">خدمات خانگی فعال</span>
+<span class="font-price-headline text-price-headline text-on-surface mt-space-xs">۳۲ کارگاه</span>
+<span class="text-label-sm font-label-sm text-secondary-container mt-space-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">handshake</span> منطقه توس مشهد
+        </span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[28px]">home_repair_service</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-on-surface-variant font-label-md text-label-md">محصولات دارای تخفیف جهادی</span>
+<span class="font-price-headline text-price-headline text-on-surface mt-space-xs">۴۵ مورد</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant mt-space-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">high_res</span> میانگین ۲۰٪ حمایت
+        </span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[28px]">loyalty</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-on-surface-variant font-label-md text-label-md">هشدار کسری موجودی</span>
+<span class="font-price-headline text-price-headline text-error mt-space-xs">۴ محصول</span>
+<span class="text-label-sm font-label-sm text-error mt-space-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span> نیاز به شارژ انبار
+        </span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-error-container/30 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[28px]">production_quantity_limits</span>
+</div>
+</div>
+</div>
+<!-- Main Management Layout (Split: Categories Sidebar & Products Table) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Categories Subsystem (4 Columns) -->
+<div class="lg:col-span-4 flex flex-col space-y-space-md">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">category</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">دسته‌بندی‌ها</h2>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant" id="cat-count-badge">۴ دسته</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">مدیریت شاخه‌ها و دسته‌بندی‌های توزیع کارزار</p>
+<!-- New Category Input -->
+<div class="mt-space-md flex gap-space-xs">
+<input class="flex-1 bg-surface-container-low px-space-sm py-space-xs rounded-lg text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="new-category-input" placeholder="عنوان دسته تازه (مثال: لبنیات سنتی)..." type="text"/>
+<button class="bg-primary-container text-on-primary px-space-md py-space-xs rounded-lg hover:bg-inverse-surface transition-colors flex items-center gap-1 font-label-md text-label-md" onclick="addNewCategory()">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>افزودن</span>
+</button>
+</div>
+<!-- Categories List -->
+<div class="mt-space-md space-y-space-xs" id="category-list">
+<!-- Category Item -->
+<div class="group flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-all">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">cleaning_services</span>
+</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold cat-title">خدمات خانگی و محلی</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">۲۸ مورد ثبت‌شده</span>
+</div>
+</div>
+<div class="flex items-center gap-1 opacity-80 group-hover:opacity-100 transition-opacity">
+<button class="p-1 hover:bg-surface-container-lowest rounded text-on-surface-variant hover:text-on-surface" onclick="editCategoryPrompt(this)" title="تغییر نام">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 hover:bg-error-container/40 rounded text-error" onclick="removeCategory(this)" title="حذف دسته">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Category Item -->
+<div class="group flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-all">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold cat-title">محصولات سلامت و طبی</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">۴۲ مورد ثبت‌شده</span>
+</div>
+</div>
+<div class="flex items-center gap-1 opacity-80 group-hover:opacity-100 transition-opacity">
+<button class="p-1 hover:bg-surface-container-lowest rounded text-on-surface-variant hover:text-on-surface" onclick="editCategoryPrompt(this)" title="تغییر نام">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 hover:bg-error-container/40 rounded text-error" onclick="removeCategory(this)" title="حذف دسته">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Category Item -->
+<div class="group flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-all">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">grass</span>
+</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold cat-title">سوغات خراسان و زعفران</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">۱۱۴ مورد ثبت‌شده</span>
+</div>
+</div>
+<div class="flex items-center gap-1 opacity-80 group-hover:opacity-100 transition-opacity">
+<button class="p-1 hover:bg-surface-container-lowest rounded text-on-surface-variant hover:text-on-surface" onclick="editCategoryPrompt(this)" title="تغییر نام">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 hover:bg-error-container/40 rounded text-error" onclick="removeCategory(this)" title="حذف دسته">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Category Item -->
+<div class="group flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-all">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">handyman</span>
+</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold cat-title">صنایع دستی و گلیم‌بافی</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">۶۴ مورد ثبت‌شده</span>
+</div>
+</div>
+<div class="flex items-center gap-1 opacity-80 group-hover:opacity-100 transition-opacity">
+<button class="p-1 hover:bg-surface-container-lowest rounded text-on-surface-variant hover:text-on-surface" onclick="editCategoryPrompt(this)" title="تغییر نام">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 hover:bg-error-container/40 rounded text-error" onclick="removeCategory(this)" title="حذف دسته">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Jihad Support Broadcast Card -->
+<div class="bg-primary-container text-on-primary rounded-xl p-space-md shadow-md relative overflow-hidden">
+<div class="relative z-10 flex flex-col space-y-space-xs">
+<div class="flex items-center gap-2 text-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">campaign</span>
+<span class="font-label-md text-label-md font-bold">بسته حمایتی جهادگران محفل</span>
+</div>
+<p class="font-body-sm text-body-sm text-inverse-primary leading-relaxed">
+            کلیه فرآورده‌های نشان‌دار با نشان «خدمات جهادی» بدون کارمزد توزیع شده و هزینه حمل آن در منطقه توس رایگان محاسبه خواهد شد.
+          </p>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary-container">تعداد خدمات جهادی: ۱۸ عنوان</span>
+<span class="material-symbols-outlined text-secondary-container text-[20px]">check_circle</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Product Catalog Table Section (8 Columns) -->
+<div class="lg:col-span-8 flex flex-col space-y-space-md">
+<!-- Filter and Live Search Controls -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col md:flex-row gap-space-sm items-stretch md:items-center justify-between">
+<!-- Search Input -->
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full bg-surface-container-low pl-space-md pr-10 py-space-xs rounded-xl text-body-md font-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="product-search" oninput="filterProductsTable()" placeholder="جستجوی سریع نام، کد محصول یا نوع خدمت..." type="text"/>
+</div>
+<!-- Filter Dropdown & Status Filter -->
+<div class="flex items-center gap-space-xs">
+<select class="bg-surface-container-low text-on-surface font-label-md text-label-md px-space-sm py-space-xs rounded-xl focus:outline-none shadow-sm cursor-pointer" id="category-filter" onchange="filterProductsTable()">
+<option value="all">تمام دسته‌بندی‌ها</option>
+<option value="خدمات">خدمات خانگی</option>
+<option value="محصولات">محصولات سلامت و عمومی</option>
+<option value="سوغات">سوغات و زعفران</option>
+<option value="صنایع دستی">صنایع دستی</option>
+</select>
+<select class="bg-surface-container-low text-on-surface font-label-md text-label-md px-space-sm py-space-xs rounded-xl focus:outline-none shadow-sm cursor-pointer" id="badge-filter" onchange="filterProductsTable()">
+<option value="all">تمام نشان‌ها</option>
+<option value="جهادی">خدمات جهادی</option>
+<option value="شگفت‌انگیز">شگفت‌انگیز</option>
+<option value="تخفیف">تخفیف‌دار</option>
+</select>
+<button class="p-space-xs hover:bg-surface-container rounded-lg text-on-surface-variant" onclick="resetFilters()" title="پاکسازی فیلترها">
+<span class="material-symbols-outlined text-[20px]">restart_alt</span>
+</button>
+</div>
+</div>
+<!-- Catalog Table Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-right" id="products-table">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md">
+<th class="py-space-sm px-space-md">تصویر و عنوان محصول / خدمت</th>
+<th class="py-space-sm px-space-md">دسته‌بندی</th>
+<th class="py-space-sm px-space-md">قیمت (تومان)</th>
+<th class="py-space-sm px-space-md">موجودی</th>
+<th class="py-space-sm px-space-md">نشان ویژه</th>
+<th class="py-space-sm px-space-md">وضعیت</th>
+<th class="py-space-sm px-space-md text-left">عملیات</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container" id="products-table-body">
+<!-- Row 1: پاک کردن زعفران -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group" data-badge="جهادی" data-category="خدمات">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-xl object-cover shadow-sm bg-surface-container" data-alt="A delicate pair of artisan hands carefully sorting vivid crimson saffron threads on an authentic clean wooden Persian workshop table, soft natural daylight, high resolution craftsmanship photograph" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3f2c186eFHM4HU62Di4KEhoABbB4LZrrxQp1qobyA8guMWU8h7H3YBQ9uL4rZ9EEC7iaaxtc4dC5nd1FS-h6SbxQR7xRS4VEoWOSo7cjiPVkhtx-1SZOSLbWyKfwT4mUquoh4AKhbep-AmDvgcv-MFJ3kzwF4-k9roKSdd1t_85hfqPvhD9XyzPqFQY6NaYcCSfwxvq8L1BgQa1hYK2dJBi5c-gNDePNwRNn2ej4"/>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-bold product-title truncate">پاک کردن زعفران</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">کد خدمت: KZ-101 • اشتغال بانوان توس</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center px-space-xs py-0.5 rounded-lg bg-surface-container text-primary-container font-label-sm text-label-sm">
+                    خدمات
+                  </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-price-label text-price-label text-on-surface font-extrabold product-price">۳۰۰</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">تومان / کیلوگرم گل</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-label-md text-label-md text-on-surface">نامحدود (کارمزدی)</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-md bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">volunteer_activism</span>
+                    خدمات جهادی
+                  </span>
+</td>
+<td class="py-space-md px-space-md">
+<button class="status-toggle inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm" onclick="toggleProductStatus(this)">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+                    فعال
+                  </button>
+</td>
+<td class="py-space-md px-space-md text-left">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 hover:bg-surface-container rounded-lg text-secondary" onclick="openQuickPriceModal('پاک کردن زعفران', 300, this)" title="تغییر سریع قیمت">
+<span class="material-symbols-outlined text-[18px]">price_change</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container rounded-lg text-on-surface-variant hover:text-on-surface" onclick="openEditProductModal('پاک کردن زعفران', 'خدمات', 300, 'نامحدود', 'جهادی')" title="ویرایش کامل">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+<button class="p-1.5 hover:bg-error-container/40 rounded-lg text-error" onclick="deleteProductRow(this)" title="حذف محصول">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: عینک طبی -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group" data-badge="تخفیف" data-category="محصولات">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-xl object-cover shadow-sm bg-surface-container" data-alt="Modern high quality optical prescription eyeglasses displayed on an elegant clean architectural podium with soft neutral background lighting, minimalist luxury Iranian retail product capture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtex4oEt3BnA7mmE6OtW9dhyCXDvKWUpHNj7bd53Gt2LpZ8uvkrEy8uMMJiT4MpSpF2a5nnFavNh6hp99RNv3coLNEysCEFK-ERahPqoTuqp_tq_aCa_ibIGBuyxaa-alC8qv7YjcwfJFxR_h8YZOvbCpm-D7Up0lt930eec30pnFK3FDXzT65elM1mZ6dTXLwdbXClRSvCcN2q5b2ZessVLmytr9Wnr-XyuTw4ZI"/>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-bold product-title truncate">عینک طبی</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">کد: KZ-204 • طرح سلامت بینایی محرومین</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center px-space-xs py-0.5 rounded-lg bg-surface-container text-primary-container font-label-sm text-label-sm">
+                    محصولات
+                  </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-price-label text-price-label text-on-surface font-extrabold product-price">۸۵۰</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">تومان (یارانه‌ای)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-label-md text-label-md text-on-surface">۱۸ عدد در انبار</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-md bg-surface-container text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">percent</span>
+                    تخفیف‌دار
+                  </span>
+</td>
+<td class="py-space-md px-space-md">
+<button class="status-toggle inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm" onclick="toggleProductStatus(this)">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+                    فعال
+                  </button>
+</td>
+<td class="py-space-md px-space-md text-left">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 hover:bg-surface-container rounded-lg text-secondary" onclick="openQuickPriceModal('عینک طبی', 850, this)" title="تغییر سریع قیمت">
+<span class="material-symbols-outlined text-[18px]">price_change</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container rounded-lg text-on-surface-variant hover:text-on-surface" onclick="openEditProductModal('عینک طبی', 'محصولات', 850, 18, 'تخفیف')" title="ویرایش کامل">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+<button class="p-1.5 hover:bg-error-container/40 rounded-lg text-error" onclick="deleteProductRow(this)" title="حذف محصول">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: زعفران قائنات -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group" data-badge="شگفت‌انگیز" data-category="سوغات">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-xl object-cover shadow-sm bg-surface-container" data-alt="Traditional luxury Persian saffron packaging in a royal glass jar with golden seal, surrounded by deep purple crocus flowers on midnight slate background, prestigious commercial product photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANjrbd5g31exOVIVSH2RWQNAVg8XB7dcAEybthu2DEc_jpXhJBDjVHSa7UC-c7kzjm9SitRoF2QczTMkYeL2DeX08wtMV_vh3U3LfPtUqS4pBzTcgdB7PKroOR1TiRU7KRCLRLZ-n_qTnkxII2fNOMMaXf17l0MZQfHxD6GbTdX8B2buY7LNNbEYyFu_Z2gPVA8Wgdp6ELNPIke1Y3u5onMNHHAaJ0o1TLh_MapXA"/>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-bold product-title truncate">زعفران قائنات (سرگل اعلا)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">کد: KZ-318 • بسته‌بندی ۱ مثقالی اصیل</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center px-space-xs py-0.5 rounded-lg bg-surface-container text-secondary font-label-sm text-label-sm">
+                    سوغات و زعفران
+                  </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-price-label text-price-label text-on-surface font-extrabold product-price">۱,۴۲۰,۰۰۰</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">تومان</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-label-md text-label-md text-on-surface">۵۰ مثقال</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-md bg-secondary-container text-on-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+                    شگفت‌انگیز
+                  </span>
+</td>
+<td class="py-space-md px-space-md">
+<button class="status-toggle inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm" onclick="toggleProductStatus(this)">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+                    فعال
+                  </button>
+</td>
+<td class="py-space-md px-space-md text-left">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 hover:bg-surface-container rounded-lg text-secondary" onclick="openQuickPriceModal('زعفران قائنات', '۱,۴۲۰,۰۰۰', this)" title="تغییر سریع قیمت">
+<span class="material-symbols-outlined text-[18px]">price_change</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container rounded-lg text-on-surface-variant hover:text-on-surface" onclick="openEditProductModal('زعفران قائنات', 'سوغات', '۱۴۲۰۰۰۰', 50, 'شگفت‌انگیز')" title="ویرایش کامل">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+<button class="p-1.5 hover:bg-error-container/40 rounded-lg text-error" onclick="deleteProductRow(this)" title="حذف محصول">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: صنایع دستی گلیم بافی -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group" data-badge="جهادی" data-category="صنایع دستی">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-xl object-cover shadow-sm bg-surface-container" data-alt="Traditional Persian Kilim rug with intricate geometric motifs in terracotta, ochre, indigo, and cream wool yarns, authentic handmade folk textile flat lay studio photograph" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqzJh2h_NZTNd5rnFnHmLkIEnCZkoZsd1DzcOKG0weFmmYVJQAbgXPlTFCfvMQccQ1hEaMiwDRfqRDXJlJIYVAt9KGnAjiUJTpvt5Q1pkK9yMKwbVVtjw-LMjzaat6DbFYZdCwmdvA6XBxPCVJIw5eU3p7g25-6qgeIXPeXlFJxj9GsxavZpO_MnZQQ6CFa5atkSetzT-gh8mQxrw67aAoziPb-txUhJGS6MYMJ9I"/>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-bold product-title truncate">صنایع دستی گلیم‌بافی توس</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">کد: KZ-450 • کارگاه بانوان خودسرپرست</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center px-space-xs py-0.5 rounded-lg bg-surface-container text-primary-container font-label-sm text-label-sm">
+                    صنایع دستی
+                  </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-price-label text-price-label text-on-surface font-extrabold product-price">۹۵۰,۰۰۰</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">تومان / ابعاد ۱ در ۱.۵</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-label-md text-label-md text-error">۲ تخته (محدود)</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-md bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">volunteer_activism</span>
+                    خدمات جهادی
+                  </span>
+</td>
+<td class="py-space-md px-space-md">
+<button class="status-toggle inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm" onclick="toggleProductStatus(this)">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+                    فعال
+                  </button>
+</td>
+<td class="py-space-md px-space-md text-left">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 hover:bg-surface-container rounded-lg text-secondary" onclick="openQuickPriceModal('صنایع دستی گلیم‌بافی توس', '۹۵۰,۰۰۰', this)" title="تغییر سریع قیمت">
+<span class="material-symbols-outlined text-[18px]">price_change</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container rounded-lg text-on-surface-variant hover:text-on-surface" onclick="openEditProductModal('صنایع دستی گلیم‌بافی توس', 'صنایع دستی', '۹۵۰۰۰۰', 2, 'جهادی')" title="ویرایش کامل">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+<button class="p-1.5 hover:bg-error-container/40 rounded-lg text-error" onclick="deleteProductRow(this)" title="حذف محصول">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer Pagination / Summary -->
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">نمایش ۱ تا ۴ از مجموع ۲۴۸ قلم ثبت‌شده در سامانه</span>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high">قبلی</button>
+<span class="px-space-sm py-1 rounded bg-primary-container text-on-primary font-label-sm text-label-sm font-bold">۱</span>
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high">۲</button>
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high">۳</button>
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high">بعدی</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Toast Notification Pill -->
+<div class="fixed bottom-6 left-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-space-sm bg-primary-container text-on-primary px-space-md py-space-sm rounded-xl shadow-xl" id="toast">
+<span class="material-symbols-outlined text-secondary-container text-[20px]" id="toast-icon">check_circle</span>
+<span class="font-label-lg text-label-lg" id="toast-message">عملیات با موفقیت ذخیره شد</span>
+</div>
+<!-- MODAL 1: Create / Edit Product Modal -->
+<div class="fixed inset-0 z-50 hidden items-center justify-center p-space-md bg-primary-container/60 backdrop-blur-sm" id="product-modal">
+<div class="bg-surface-container-lowest w-full max-w-2xl rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[921px]">
+<!-- Modal Header -->
+<div class="px-space-lg py-space-md bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">inventory</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold" id="modal-title">افزودن محصول یا خدمت جدید</h3>
+</div>
+<button class="p-1 rounded-lg hover:bg-surface-container-high text-on-surface-variant" onclick="closeProductModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Body (Form) -->
+<div class="p-space-lg overflow-y-auto space-y-space-md">
+<form class="space-y-space-md" id="product-form" onsubmit="handleProductFormSubmit(event)">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Name -->
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">نام محصول یا خدمت <span class="text-error">*</span></label>
+<input class="bg-surface-container-low px-space-sm py-space-xs rounded-xl text-body-md font-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="form-name" placeholder="مثال: پاک کردن زرشک کوهی..." required="" type="text"/>
+</div>
+<!-- Price -->
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">قیمت عرضه (تومان) <span class="text-error">*</span></label>
+<div class="relative">
+<input class="w-full bg-surface-container-low px-space-sm py-space-xs rounded-xl text-body-md font-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="form-price" placeholder="مثال: ۴۵۰,۰۰۰" required="" type="text"/>
+<span class="absolute left-3 top-1/2 -translate-y-1/2 font-label-sm text-label-sm text-outline">تومان</span>
+</div>
+</div>
+<!-- Category -->
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">دسته‌بندی <span class="text-error">*</span></label>
+<select class="bg-surface-container-low px-space-sm py-space-xs rounded-xl text-body-md font-body-md text-on-surface focus:outline-none shadow-sm cursor-pointer" id="form-category" required="">
+<option value="خدمات">خدمات خانگی و محلی</option>
+<option value="محصولات">محصولات سلامت و طبی</option>
+<option value="سوغات">سوغات خراسان و زعفران</option>
+<option value="صنایع دستی">صنایع دستی و گلیم‌بافی</option>
+</select>
+</div>
+<!-- Inventory -->
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">موجودی انبار / ظرفیت پذیرش</label>
+<input class="bg-surface-container-low px-space-sm py-space-xs rounded-xl text-body-md font-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="form-stock" placeholder="مثال: ۲۵ عدد یا نامحدود" type="text"/>
+</div>
+</div>
+<!-- Image Link & Upload Simulation -->
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">تصویر شاخص محصول</label>
+<div class="flex gap-space-xs items-center">
+<input class="flex-1 bg-surface-container-low px-space-sm py-space-xs rounded-xl text-body-md font-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="form-image-url" placeholder="نشانی اینترنتی تصویر یا آپلود مستقیم..." type="text"/>
+<button class="bg-surface-container hover:bg-surface-container-high px-space-md py-space-xs rounded-xl text-on-surface font-label-md text-label-md flex items-center gap-1 shadow-sm" onclick="triggerToast('بارگذاری نمونه تصویر با موفقیت انجام شد')" type="button">
+<span class="material-symbols-outlined text-[18px]">upload</span>
+<span>آپلود فایل</span>
+</button>
+</div>
+</div>
+<!-- Badges & Highlight Key -->
+<div class="flex flex-col space-y-2">
+<label class="font-label-md text-label-md text-on-surface font-semibold">کلید نشان و مزیت ویژه کارزار</label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-xs">
+<label class="flex items-center gap-space-xs p-space-sm rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container">
+<input checked="" class="text-secondary focus:ring-0" name="form-badge" type="radio" value="جهادی"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">خدمات جهادی</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">طرح اشتغال و حمایت</span>
+</div>
+</label>
+<label class="flex items-center gap-space-xs p-space-sm rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container">
+<input class="text-secondary focus:ring-0" name="form-badge" type="radio" value="شگفت‌انگیز"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">شگفت‌انگیز</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">فروش ویژه با تخفیف بالا</span>
+</div>
+</label>
+<label class="flex items-center gap-space-xs p-space-sm rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container">
+<input class="text-secondary focus:ring-0" name="form-badge" type="radio" value="تخفیف"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">تخفیف‌دار</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">یارانه مردمی محفل</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Description -->
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">توضیحات و شرایط کارزار</label>
+<textarea class="bg-surface-container-low p-space-sm rounded-xl text-body-md font-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="form-description" placeholder="جزئیات دستمزد، نحوه تحویل در بلوار توس، تضمین اصالت..." rows="3"></textarea>
+</div>
+<!-- Actions -->
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-space-xs rounded-xl bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" onclick="closeProductModal()" type="button">
+              انصراف
+            </button>
+<button class="px-space-lg py-space-xs rounded-xl bg-secondary-container hover:bg-secondary text-on-secondary font-label-md text-label-md font-bold shadow-md transition-all" type="submit">
+              ذخیره و انتشار در کارزار
+            </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!-- MODAL 2: Quick Price Change Modal -->
+<div class="fixed inset-0 z-50 hidden items-center justify-center p-space-md bg-primary-container/60 backdrop-blur-sm" id="quick-price-modal">
+<div class="bg-surface-container-lowest w-full max-w-md rounded-2xl shadow-2xl p-space-lg flex flex-col space-y-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">تغییر فوری قیمت</h3>
+<button class="p-1 rounded-lg hover:bg-surface-container-high text-on-surface-variant" onclick="closeQuickPriceModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant font-medium" id="quick-price-target-title"></p>
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">قیمت جدید به تومان</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low px-space-sm py-space-xs rounded-xl text-body-md font-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="quick-price-input" type="text"/>
+<span class="absolute left-3 top-1/2 -translate-y-1/2 font-label-sm text-label-sm text-outline">تومان</span>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-space-xs rounded-xl bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high" onclick="closeQuickPriceModal()">انصراف</button>
+<button class="px-space-lg py-space-xs rounded-xl bg-primary-container hover:bg-inverse-surface text-on-primary font-label-md text-label-md font-bold shadow-md" onclick="saveQuickPrice()">اعمال نرخ جدید</button>
+</div>
+</div>
+</div>
+<!-- MODAL 3: Batch Price Change Modal -->
+<div class="fixed inset-0 z-50 hidden items-center justify-center p-space-md bg-primary-container/60 backdrop-blur-sm" id="batch-price-modal">
+<div class="bg-surface-container-lowest w-full max-w-lg rounded-2xl shadow-2xl p-space-lg flex flex-col space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">tune</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">تغییر نرخ گروهی (درصدی)</h3>
+</div>
+<button class="p-1 rounded-lg hover:bg-surface-container-high text-on-surface-variant" onclick="toggleBatchPriceModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        اعمال تخفیف یا تعدیل قیمت برای تمام فرآورده‌های یک دسته‌بندی مشخص بصورت خودکار.
+      </p>
+<div class="space-y-space-sm">
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">دسته‌بندی هدف</label>
+<select class="bg-surface-container-low px-space-sm py-space-xs rounded-xl text-body-md font-body-md text-on-surface focus:outline-none shadow-sm" id="batch-cat-select">
+<option value="all">کلیه محصولات و خدمات</option>
+<option value="خدمات">صرفاً خدمات خانگی</option>
+<option value="محصولات">صرفاً محصولات سلامت</option>
+<option value="سوغات">صرفاً سوغات و زعفران</option>
+<option value="صنایع دستی">صرفاً صنایع دستی</option>
+</select>
+</div>
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">درصد تغییر</label>
+<div class="grid grid-cols-2 gap-space-xs">
+<input class="bg-surface-container-low px-space-sm py-space-xs rounded-xl text-body-md font-body-md text-on-surface focus:outline-none shadow-sm" id="batch-percent-input" placeholder="مثال: ۱۰" type="number"/>
+<select class="bg-surface-container-low px-space-sm py-space-xs rounded-xl text-body-md font-body-md text-on-surface focus:outline-none shadow-sm" id="batch-type-select">
+<option value="discount">تخفیف (کاهش نرخ)</option>
+<option value="increase">افزایش نرخ</option>
+</select>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-space-xs rounded-xl bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high" onclick="toggleBatchPriceModal()">انصراف</button>
+<button class="px-space-lg py-space-xs rounded-xl bg-secondary-container hover:bg-secondary text-on-secondary font-label-md text-label-md font-bold shadow-md" onclick="applyBatchPrice()">اعمال دسته‌جمعی نرخ‌ها</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  let activeQuickPriceRowElement = null;
+
+  function triggerToast(message) {
+    const toast = document.getElementById('toast');
+    const toastMsg = document.getElementById('toast-message');
+    toastMsg.innerText = message;
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    setTimeout(() => {
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('translate-y-24', 'opacity-0');
+    }, 2800);
+  }
+
+  function openCreateModal() {
+    document.getElementById('modal-title').innerText = 'افزودن محصول یا خدمت جدید';
+    document.getElementById('product-form').reset();
+    const modal = document.getElementById('product-modal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function openEditProductModal(name, category, price, stock, badge) {
+    document.getElementById('modal-title').innerText = 'ویرایش کاتالوگ: ' + name;
+    document.getElementById('form-name').value = name;
+    document.getElementById('form-price').value = price;
+    document.getElementById('form-stock').value = stock;
+    document.getElementById('form-category').value = category;
+    
+    const radios = document.getElementsByName('form-badge');
+    for (let r of radios) {
+      if (r.value === badge) r.checked = true;
+    }
+
+    const modal = document.getElementById('product-modal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeProductModal() {
+    const modal = document.getElementById('product-modal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+
+  function handleProductFormSubmit(e) {
+    e.preventDefault();
+    const name = document.getElementById('form-name').value;
+    closeProductModal();
+    triggerToast('تغییرات محصول «' + name + '» با موفقیت ذخیره و همگام‌سازی شد');
+  }
+
+  function openQuickPriceModal(productName, currentPrice, btn) {
+    activeQuickPriceRowElement = btn.closest('tr');
+    document.getElementById('quick-price-target-title').innerText = 'محصول: ' + productName;
+    document.getElementById('quick-price-input').value = currentPrice;
+    const modal = document.getElementById('quick-price-modal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeQuickPriceModal() {
+    const modal = document.getElementById('quick-price-modal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    activeQuickPriceRowElement = null;
+  }
+
+  function saveQuickPrice() {
+    const newPrice = document.getElementById('quick-price-input').value;
+    if (activeQuickPriceRowElement && newPrice) {
+      const priceSpan = activeQuickPriceRowElement.querySelector('.product-price');
+      if (priceSpan) priceSpan.innerText = newPrice;
+      closeQuickPriceModal();
+      triggerToast('نرخ جدید با موفقیت اعمال گردید');
+    }
+  }
+
+  function toggleBatchPriceModal() {
+    const modal = document.getElementById('batch-price-modal');
+    if (modal.classList.contains('hidden')) {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    } else {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  }
+
+  function applyBatchPrice() {
+    const percent = document.getElementById('batch-percent-input').value;
+    toggleBatchPriceModal();
+    triggerToast('تغییر نرخ ' + (percent || '۱۰') + ' درصدی با موفقیت روی دسته‌بندی هدف اعمال شد');
+  }
+
+  function toggleProductStatus(btn) {
+    const isCurrentlyActive = btn.innerText.includes('فعال');
+    if (isCurrentlyActive) {
+      btn.innerHTML = '<span class="w-2 h-2 rounded-full bg-outline"></span> غیرفعال';
+      btn.classList.remove('bg-surface-container-high', 'text-on-surface');
+      btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+      triggerToast('وضعیت فرآورده به غیرفعال تغییر یافت');
+    } else {
+      btn.innerHTML = '<span class="w-2 h-2 rounded-full bg-secondary-container"></span> فعال';
+      btn.classList.add('bg-surface-container-high', 'text-on-surface');
+      btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      triggerToast('فرآورده در کاتالوگ فعال شد');
+    }
+  }
+
+  function deleteProductRow(btn) {
+    const row = btn.closest('tr');
+    const title = row.querySelector('.product-title')?.innerText || 'قلم کاتالوگ';
+    if (confirm('آیا از حذف «' + title + '» از کاتالوگ کارزار اطمینان دارید؟')) {
+      row.remove();
+      triggerToast('«' + title + '» حذف گردید');
+    }
+  }
+
+  function addNewCategory() {
+    const input = document.getElementById('new-category-input');
+    const val = input.value.trim();
+    if (!val) return;
+
+    const list = document.getElementById('category-list');
+    const item = document.createElement('div');
+    item.className = 'group flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-all';
+    item.innerHTML = `
+      <div class="flex items-center gap-space-sm">
+        <span class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary-container">
+          <span class="material-symbols-outlined text-[18px]">folder</span>
+        </span>
+        <div class="flex flex-col">
+          <span class="font-title-md text-title-md text-on-surface font-semibold cat-title">${val}</span>
+          <span class="font-label-sm text-label-sm text-on-surface-variant">۰ مورد ثبت‌شده</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-1 opacity-80 group-hover:opacity-100 transition-opacity">
+        <button onclick="editCategoryPrompt(this)" class="p-1 hover:bg-surface-container-lowest rounded text-on-surface-variant hover:text-on-surface" title="تغییر نام">
+          <span class="material-symbols-outlined text-[18px]">edit</span>
+        </button>
+        <button onclick="removeCategory(this)" class="p-1 hover:bg-error-container/40 rounded text-error" title="حذف دسته">
+          <span class="material-symbols-outlined text-[18px]">delete</span>
+        </button>
+      </div>
+    `;
+    list.appendChild(item);
+    input.value = '';
+    updateCategoryCount();
+    triggerToast('دسته جدید «' + val + '» اضافه شد');
+  }
+
+  function editCategoryPrompt(btn) {
+    const item = btn.closest('.group');
+    const titleSpan = item.querySelector('.cat-title');
+    const currentName = titleSpan.innerText;
+    const newName = prompt('نام جدید دسته را وارد نمایید:', currentName);
+    if (newName && newName.trim() !== '') {
+      titleSpan.innerText = newName.trim();
+      triggerToast('نام دسته با موفقیت ویرایش شد');
+    }
+  }
+
+  function removeCategory(btn) {
+    const item = btn.closest('.group');
+    const title = item.querySelector('.cat-title')?.innerText || '';
+    if (confirm('آیا از حذف دسته‌بندی «' + title + '» مطمئن هستید؟')) {
+      item.remove();
+      updateCategoryCount();
+      triggerToast('دسته‌بندی با موفقیت حذف گردید');
+    }
+  }
+
+  function updateCategoryCount() {
+    const count = document.querySelectorAll('#category-list > div').length;
+    document.getElementById('cat-count-badge').innerText = count + ' دسته';
+  }
+
+  function filterProductsTable() {
+    const query = document.getElementById('product-search').value.toLowerCase().trim();
+    const cat = document.getElementById('category-filter').value;
+    const badge = document.getElementById('badge-filter').value;
+    const rows = document.querySelectorAll('#products-table-body tr');
+
+    rows.forEach(row => {
+      const title = row.querySelector('.product-title')?.innerText.toLowerCase() || '';
+      const rowCat = row.getAttribute('data-category') || '';
+      const rowBadge = row.getAttribute('data-badge') || '';
+
+      const matchesQuery = !query || title.includes(query);
+      const matchesCat = cat === 'all' || rowCat.includes(cat);
+      const matchesBadge = badge === 'all' || rowBadge.includes(badge);
+
+      if (matchesQuery && matchesCat && matchesBadge) {
+        row.style.display = '';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  }
+
+  function resetFilters() {
+    document.getElementById('product-search').value = '';
+    document.getElementById('category-filter').value = 'all';
+    document.getElementById('badge-filter').value = 'all';
+    filterProductsTable();
+    triggerToast('فیلترها بازنشانی شدند');
+  }
+</script></main></div></body></html>

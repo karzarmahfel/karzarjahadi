@@ -1,11 +1,55 @@
-<div align="center">
+# کارزار جهاد اقتصادی محفل (مشهد مقدس - بلوار توس)
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+پلتفرم توانمندسازی مشاغل خانگی، پیوند مستقیم تولیدکننده محلی به سفره خانواده، حذف واسطه‌گری و توزیع عادلانه خدمات و ملزومات معیشتی در مشهد مقدس (بلوار توس).
 
-  <h1>Built with AI Studio</h2>
+---
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## 🚀 راهنمای هاست رایگان روی GitHub Pages
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+این پروژه به گونه‌ای کانفیگ شده است که به صورت کاملاً خودکار روی **GitHub Pages** بارگذاری و اجرا می‌شود. برای فعال‌سازی کافیست مراحل زیر را طی کنید:
 
-</div>
+### روش ۱: هاست خودکار با گیت‌هاب اکشنز (توصیه‌شده و بدون دردسر)
+
+1. یک ریپازیتوری جدید در گیت‌هاب بسازید (مثلاً به نام `karzar` یا هر نام دلخواه).
+2. کدهای این پروژه را داخل ریپازیتوری آپلود یا Push کنید:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit for GitHub Pages"
+   git branch -M main
+   git remote add origin https://github.com/USERNAME/REPOSITORY_NAME.git
+   git push -u origin main
+   ```
+3. در صفحه ریپازیتوری خود در گیت‌هاب، به مسیر **Settings** > **Pages** بروید.
+4. در بخش **Build and deployment**:
+   - گزینه **Source** را روی **GitHub Actions** بگذارید.
+5. به همین راحتی! با هر بار push کردن کد، فایل گردش‌کار `.github/workflows/deploy.yml` به صورت اتوماتیک اجرا شده و سایت شما در آدرس زیر آنلاین می‌شود:
+   `https://USERNAME.github.io/REPOSITORY_NAME/`
+
+---
+
+### روش ۲: هاست از طریق شاخه `gh-pages` یا پوشه `dist`
+
+اگر ترجیح می‌دهید فایل‌های کامپایل‌شده نهایی را مستقیم هاست کنید:
+1. دستور زیر را برای بیلد پروژه اجرا کنید:
+   ```bash
+   npm run build
+   ```
+2. پوشه `dist` که شامل فایل‌های استاتیک (`index.html`، `404.html` و پوشه `assets`) است را به عنوان محتوای هاست استفاده کنید.
+
+---
+
+## 🛠️ دستورات توسعه محلی (Local Development)
+
+- نصب وابستگی‌ها:
+  ```bash
+  npm install
+  ```
+- اجرای سرور توسعه محلی:
+  ```bash
+  npm run dev
+  ```
+- خروجی نهایی بیلد:
+  ```bash
+  npm run build
+  ```

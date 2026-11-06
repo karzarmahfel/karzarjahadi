@@ -1,0 +1,6 @@
+{
+  "name": "کارزار جهاد اقتصادی محفل",
+  "description": "سامانه کارزار جهاد اقتصادی محفل مشهد مقدس (بلوار توس) - ویترین محصولات و خدمات بومی، سبد خرید و پنل مدیریت و انبارداری",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
