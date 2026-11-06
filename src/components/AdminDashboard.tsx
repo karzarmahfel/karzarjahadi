@@ -64,8 +64,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
     setSiteName('کارزار جهاد اقتصادی محفل');
     setSiteSlogan('سفره با برکت، جهش تولید خانگی در بستر توس');
     setPhone('09367495875');
-    setRubikaUrl('https://rubika.ir/karzarmahfel184');
-    setAddress('مشهد مقدس، بلوار توس، توس ۱۸۴، پایگاه جهاد اقتصادی محفل');
+    setRubikaUrl('https://rubika.ir/karzarmahfel65');
+    setAddress('مشهد مقدس، بلوار توس، توس ۶۵، پایگاه جهاد اقتصادی محفل');
     setThemeScheme('luxury-red-orange');
     setBannerText(
       'توزیع مستقیم زعفران ناب قائنات، عسل طبیعی کوهپایه و صنایع دستی کدبانوهای بلوار توس با تخفیف ویژه جهاد اقتصادی و تحویل اکسپرس محله‌ای.'

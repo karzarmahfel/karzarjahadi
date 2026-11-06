@@ -602,7 +602,7 @@ export const CartView: React.FC<CartViewProps> = ({
               target="_blank"
             >
               <span className="material-symbols-outlined text-[18px]">open_in_new</span>
-              <span>ورود و عضویت در کانال روبیکا (karzarmahfel184)</span>
+              <span>ورود و عضویت در کانال روبیکا (karzarmahfel65)</span>
             </a>
           </div>
         </div>

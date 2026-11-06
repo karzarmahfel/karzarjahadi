@@ -829,7 +829,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      karzarmahfel184@
+                      karzarmahfel65@
                     </a>
                   </div>
                 </div>
@@ -848,7 +848,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   href={`tel:${settings.phone}`}
                 >
                   <span className="material-symbols-outlined text-[18px]">phone_enabled</span>
-                  <span font-mono dir="ltr">{toPersianDigits(settings.phone)}</span>
+                  <span className="font-mono" dir="ltr">{toPersianDigits(settings.phone)}</span>
                 </a>
               </div>
             </div>
